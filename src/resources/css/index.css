@@ -1,0 +1,258 @@
+.cotiza__left_top {
+	position: absolute;
+	width: 824px;
+	height: 483px;
+	margin-left: -356px;
+	margin-top: 0px;
+	background: #C4C4C4;
+}
+
+.cotiza__left_botton {
+	position: absolute;
+	width: 824px;
+	height: 483px;
+	margin-left: -356px;
+	margin-top: 241px;
+	background: #ECF0FF;
+}
+
+.cotiza__left_top__center {
+	position: absolute;
+	width: 320px;
+	height: 250px;
+	margin-left: 472px;
+	margin-top: 96px;
+	margin-right: 64px;
+	/* Gray_1_Títulos */
+}
+
+.cotiza__left_top__logo {
+	position: absolute;
+	/* Logo RIMAC */
+	height: 16px;
+	width: 99px;
+	margin-left: 120px;
+	margin-top: 24px;
+	margin-right: 1141px;
+	border-radius: 0px;
+}
+
+.cotiza__right_button {
+	/*margin-top: 10px;*/
+	background: #EF3340;
+	border-radius: 8px;
+	height: 56px;
+	width: 192px;
+	margin-left: 0px;
+	margin-top: 30px;
+	border-radius: 8px;
+}
+
+.cotiza_right_button_span {
+	height: 16px;
+	margin-left: 32px;
+	margin-right: 32px;
+	margin-top: calc(50% - 16px/2);
+	height: 16px;
+	width: 128px;
+	left: 32px;
+	top: 20px;
+	border-radius: nullpx;
+	text-align: center;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	/* White */
+	color: #FFFFFF;
+}
+
+.cotiza_right_form {
+	margin-top: 25px;
+	position: absolute;
+	height: 36px;
+	width: 288px;
+	left: 760px;
+	top: 112px;
+	border-radius: nullpx;
+}
+
+.cotiza__right_titulo {
+	/* Déjanos tus datos */
+	margin-bottom: 10px;
+	position: absolute;
+	width: 288px;
+	height: 36px;
+	left: 760px;
+	top: 112px;
+	/* Title_05/D_Regular_28px */
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 36px;
+	/* identical to box height, or 129% */
+	letter-spacing: -0.2px;
+	/* Gray_1_Títulos */
+	color: #494F66;
+}
+
+.cotiza__left_botton_titulo {
+	height: 16px;
+	width: 55px;
+	left: 152px;
+	top: 370px;
+	border-radius: nullpx;
+	width: 55px;
+	height: 16px;
+	left: 152px;
+	top: 370px;
+	/* Button/Button_12px */
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	/* identical to box height, or 133% */
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	/* Gray_1_Títulos */
+	color: #494F66;
+}
+
+.cotiza__left_botton_center {
+	position: absolute;
+	height: 96px;
+	width: 320px;
+	margin-left: 152px;
+	margin-left: 64px;
+	margin-top: 149px;
+	border-radius: nullpx;
+	/* Title_04/D_Regular_36px */
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 48px;
+	/* or 133% */
+	letter-spacing: -0.2px;
+	/* Gray_1_Títulos */
+	color: #494F66;
+}
+
+.cotiza__left_botton_subtitle {
+	position: absolute;
+	width: 288px;
+	height: 48px;
+	left: 152px;
+	top: 502px;
+	/* Paragraph/Reg_14px */
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	/* or 171% */
+	display: flex;
+	align-items: center;
+	/* Gray_2_Paragraph */
+}
+
+.cotiza__right_select {
+	height: 56px;
+	width: 69.67px;
+	left: 0px;
+	top: 0px;
+	border-radius: 4.027777671813965px;
+	margin-top: 16px;
+}
+
+.cotiza__right_select_input {
+	height: 56px;
+	width: 191.33;
+	left: 0px;
+	top: 0px;
+	border-radius: 4.027777671813965px;
+	margin-top: 16px;
+}
+
+.cotiza__right_input {
+	height: 56px;
+	width: 288px;
+	left: 0px;
+	top: 0px;
+	border-radius: 4.027777671813965px;
+	margin-top: 16px;
+}
+
+.cotiza__right_botton_terms {
+	/* Acepto la Política de Protecciòn de Datos Personales y los Términos y Condiciones. */
+	height: 40px;
+	margin-left: 32px;
+	margin-right: 2px;
+	margin-top: 10px;
+	/* Paragraph/Reg_12px */
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	/* or 167% */
+	letter-spacing: 0.2px;
+	/* Gray_2_Paragraph */
+	color: #676F8F;
+}
+
+.cotiza__right_botton_terms_check {
+	height: 20px;
+	width: 20px;
+	margin-left: 0px;
+	margin-top: 0px;
+	border-radius: 4px;
+	/* Green_2 */
+	background: #43B748;
+	border-radius: 4px;
+}
+
+.cotizza_right_form_valida {
+	color: #EF3340
+}
+
+.cotiza__right_header {
+	height: 20px;
+	width: 131px;
+	margin-left: 980px;
+	margin-top: 22px;
+	border-radius: nullpx;
+	position: absolute;
+	/* Paragraph/Reg_12px */
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 20px;
+	/* identical to box height, or 167% */
+	display: flex;
+	align-items: center;
+	text-align: right;
+	letter-spacing: 0.2px;
+	/* Gray_2_Paragraph */
+	color: #676F8F;
+}
+
+.cotiza__right_header_telf {
+	position: absolute;
+	height: 24px;
+	width: 88px;
+	margin-left: 1152px;
+	margin-top: 20px;
+	border-radius: nullpx;
+	/* Paragraph/Reg_14px */
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	/* identical to box height, or 171% */
+	text-align: right;
+	/* Acian_2_Hover */
+	color: #6F7DFF;
+}

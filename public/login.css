@@ -1,0 +1,175 @@
+.cotiza__left_top{
+    position: absolute;
+    width: 856px;
+    height: 377px;
+    left: -320px;
+    top: 0px;
+
+    /*background: #C4C4C4;*/
+}
+.cotiza__left_botton{
+    position: absolute;
+    width: 892px;
+    height: 483px;
+    left: -356px;
+    top: 241px;
+
+    background: #ECF0FF;
+}
+
+.cotiza__left_top__center{
+    position: absolute;
+    width: 320px;
+    height: 250px;
+    left: 152px;
+    top: 96px;
+
+    /* Gray_1_Títulos */
+
+    background: #494F66;
+}
+
+.cotiza__left_top__logo{
+    /* Logo RIMAC */
+    position: absolute;
+    width: 99px;
+    height: 16px;
+    left: calc(50% - 99px/2 - 510.5px);
+    top: calc(50% - 16px/2);
+    /* Red_1_Rimac */
+   
+        background-image: url("logo.png");
+        background-color: #cccccc;
+      
+}
+
+.cotiza__right_button{
+    /* .atom_button */
+
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Red_1_Rimac */
+
+background: #EF3340;
+border-radius: 8px;
+}
+
+.cotiza__right_titulo{
+    /* Déjanos tus datos */
+
+
+position: absolute;
+width: 288px;
+height: 36px;
+left: 760px;
+top: 112px;
+
+/* Title_05/D_Regular_28px */
+
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 36px;
+/* identical to box height, or 129% */
+
+letter-spacing: -0.2px;
+
+/* Gray_1_Títulos */
+
+color: #494F66;
+}
+
+.cotiza__left_botton_titulo{
+    
+position: absolute;
+width: 55px;
+height: 16px;
+left: 152px;
+top: 370px;
+
+/* Button/Button_12px */
+
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.8px;
+text-transform: uppercase;
+
+/* Gray_1_Títulos */
+
+color: #494F66;
+}
+
+.cotiza__left_botton_center{
+    position: absolute;
+width: 320px;
+height: 96px;
+left: 152px;
+top: 390px;
+
+/* Title_04/D_Regular_36px */
+
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 48px;
+/* or 133% */
+
+letter-spacing: -0.2px;
+
+/* Gray_1_Títulos */
+
+color: #494F66;
+}
+
+.cotiza__left_botton_subtitle{
+    position: absolute;
+width: 288px;
+height: 48px;
+left: 152px;
+top: 502px;
+
+/* Paragraph/Reg_14px */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+display: flex;
+align-items: center;
+
+/* Gray_2_Paragraph */
+
+color: #676F8F;
+}
+
+.cotiza__right_input{
+    position: absolute !important;
+    left: 0px !important;
+    right: 0px !important;
+    top: 0px !important;
+    bottom: 0px !important;
+
+    /* White */
+
+    background: #FFFFFF !important;
+    /* Gray_4 */
+
+    border: 1px solid #C5CBE0 !important;
+    box-sizing: border-box !important;
+    border-radius: 4px !important;
+}
