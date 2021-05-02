@@ -1,0 +1,12 @@
+{
+    "cotizacion":
+    [
+        {
+        "id": 1,
+        "tipoDoc": 1,
+        "numeroDoc": "89864589",
+        "celular": 989339833,
+        "placa": "XYZ910702"
+        }
+    ]
+}

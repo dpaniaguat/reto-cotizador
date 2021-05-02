@@ -256,3 +256,9 @@
 	/* Acian_2_Hover */
 	color: #6F7DFF;
 }
+
+.header-app{
+	background:black;
+	width: 100%;
+	height: 50px;
+}

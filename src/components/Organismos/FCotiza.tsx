@@ -1,7 +1,9 @@
- 
 import { useForm } from "react-hook-form";
 import {useState,useEffect} from 'react';
-import { useCotizacion } from "../hooks/useCotizacion";
+import { useCotizacion } from "../../hooks/useCotizacion";
+import { Redirect } from "react-router";
+import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 type FormData = {
     nroDocumento:number,
@@ -12,9 +14,17 @@ type FormData = {
 export const FCotiza=()=>{
 
     const { register, setValue, handleSubmit, formState: { errors } } = useForm<FormData>();
+
+    const history = useHistory();
+
     const onSubmit = handleSubmit((data,e) => {
-        console.log(e);
-        e?.target.reset();
+        console.log(data);
+        //e?.target.reset();
+
+        // <Redirect  to="/datos-auto" />
+        history.push(`/datos-auto`);
+        
+        
     });
 
     const [dni, setdni] = useState('');
@@ -25,7 +35,6 @@ export const FCotiza=()=>{
        
         setdni(value.replace(/\D/g, ""));
     };
-
   
 
     return (
