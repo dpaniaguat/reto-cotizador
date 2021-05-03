@@ -4,7 +4,7 @@ export const Index=()=>{
 
     return (
         <>
-          <div className="cotiza">
+          <div className="cotiza login">
             <div className="cotiza__left_top__logo">
               <img src="/src/resources/imgs/logo.png" alt="" className=""/>
             </div>
