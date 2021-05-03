@@ -12,8 +12,7 @@ const App = () =>(
     
       <Switch>
         <Route path="/" exact component={Login} />
-        <Route path="/datos-auto" exact component={datosAuto} />
-        {/* <Protected path="/datos-auto" exact component={datosAuto}/> */}
+        <Protected path="/datos-auto" exact component={datosAuto}/>
       </Switch>
   </Router>
 );

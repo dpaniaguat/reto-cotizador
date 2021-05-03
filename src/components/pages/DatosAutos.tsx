@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 
 export const datosAuto = () =>{
 
@@ -6,7 +5,7 @@ export const datosAuto = () =>{
         <>
 
             <h1>segunda pagina</h1>
-            <Link to="/">CLICK</Link>
+            
         </>
 
     );

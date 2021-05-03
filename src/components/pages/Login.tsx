@@ -20,8 +20,8 @@ export const Index = () =>{
                 </div>
                 <div className="cotiza__left_botton_subtitle">
                   <span>
-                          Cuentanos donde le haras seguimiento a tu seguro
-                          </span>
+                    Cuentanos donde le haras seguimiento a tu seguro
+                  </span>
                 </div>
               </div>
 
@@ -30,11 +30,12 @@ export const Index = () =>{
             <div className="cotiza_right">
 
                 <div className="cotiza__right_titulo">
-                      <span>Déjanos tus datos</span>
+                   <span>Déjanos tus datos</span>
                 </div> 
                 <div className="cotiza_right_form">
                   <FCotiza/>
                 </div>
+                
             </div>
           
             <div className="cotiza_mobile">

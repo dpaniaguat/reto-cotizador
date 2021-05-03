@@ -7,7 +7,7 @@ const Protected =({component: Component, ...rest}:any)=>{
 
     if( !userLogged)
     {
-        return <Redirect to="/login"/>
+        return <Redirect to="/"/>
     }
 
     return <Route {...rest} component={Component}/>
