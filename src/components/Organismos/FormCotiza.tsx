@@ -1,31 +1,58 @@
 import { useForm } from "react-hook-form";
 import {useState,useEffect} from 'react';
-import { useCotizacion } from "../../hooks/useCotizacion";
 import { Redirect } from "react-router";
 import { Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
+import {useLogin} from "../../hooks/useLogin";
+import { Irequest } from "../../interfaces/Irequest";
+import { FormData } from "../../types/FormData"; 
+import { Ilogin } from "../../interfaces/Ilogin";
+import loginService from "../../services/loginService";
 
-type FormData = {
-    nroDocumento:number,
-    celular:number,
-    nroPlaca:string
-}
-
-export const FCotiza=()=>{
+export const FormCotiza=()=>{
 
     const { register, setValue, handleSubmit, formState: { errors } } = useForm<FormData>();
 
     const history = useHistory();
 
-    const onSubmit = handleSubmit((data,e) => {
-        console.log(data);
+    
+        //console.log(data);
+
+    const onSubmit =  handleSubmit((data,e) => {
+        
         //e?.target.reset();
 
-        // <Redirect  to="/datos-auto" />
-        history.push(`/datos-auto`);
+        const cliente : Ilogin =  {
+            TipoDoc: data.TipoDoc,
+            NumeroDoc: data.NumeroDoc,
+            Celular: data.Celular,
+            Placa: data.Placa
+        };
+
+        const config:Irequest =  {
+            InitialMetodo: 'POST',
+            InitialId: 0,
+            IData:cliente
+        };
         
+
+        console.log('cliente: ',cliente);
+
+        const rsp = proceso.fetchData(config);
+        console.log(proceso.response, proceso.isComplete,' rsp: ',rsp);    
+
+        /*
+        let tiempo = setInterval(()=>{
+            
+            //clearInterval(tiempo);
+        },1000);
+*/
+        // <Redirect  to="/datos-auto" />
+        //history.push(`/datos-auto`);
         
     });
+
+    const proceso = useLogin();
 
     const [dni, setdni] = useState('');
 
@@ -34,15 +61,16 @@ export const FCotiza=()=>{
         const {name,value} = e.target;
        
         setdni(value.replace(/\D/g, ""));
-    };
-  
+    };  
 
     return (
         <>
          <form className="frm" onSubmit={onSubmit}>
                 <div className="">
-                    <select className="cotiza__right_select">
-                        <option>DNI</option>
+                    <select className="cotiza__right_select" {
+                        ...register("TipoDoc",{required:true})
+                    }>
+                        <option>1</option>
                     </select>
                 </div>
 
@@ -51,7 +79,7 @@ export const FCotiza=()=>{
                         type="text" 
                         className="cotiza__right_select_input"
                         placeholder="Nro. de documento"
-                        {...register("nroDocumento",
+                        {...register("NumeroDoc",
                             {
                                 required:true,
                                 maxLength: 10,
@@ -61,7 +89,7 @@ export const FCotiza=()=>{
                         value={dni}
                         onInput={inputSoloNumeros}
                     />
-                     {errors.nroDocumento && 
+                     {errors.NumeroDoc && 
                         <span className="cotizza_right_form_valida">
                             Completar número de documento
                         </span>
@@ -72,7 +100,7 @@ export const FCotiza=()=>{
                     <input 
                         type="tel" 
                         className="cotiza__right_input" 
-                        {...register("celular",
+                        {...register("Celular",
                             {
                                 required:true,
                                 maxLength: 9,
@@ -81,9 +109,9 @@ export const FCotiza=()=>{
                         )}
                         placeholder="Celular"
                     />
-                        {errors.celular && 
+                        {errors.Celular && 
                         <span className="cotizza_right_form_valida">
-                            Completar número de celular
+                            Completar número de Celular
                         </span>
                         }
                 </div>
@@ -91,7 +119,7 @@ export const FCotiza=()=>{
                 <input 
                         type="text" 
                         className="cotiza__right_input" 
-                        {...register("nroPlaca",
+                        {...register("Placa",
                             {
                                 required:true,
                                 maxLength: 10 
@@ -100,7 +128,7 @@ export const FCotiza=()=>{
                         placeholder="Nro. de placa"
                     />
                     {
-                        errors.nroPlaca && 
+                        errors.Placa && 
                         <span className="cotizza_right_form_valida">
                             Completar número de placa
                         </span>
@@ -120,14 +148,11 @@ export const FCotiza=()=>{
                     </button>
                 </div>
 
+            </form>             
                 
-
-            </form>
-                
-                
- 
         </>
                
     );
 
 }
+ 

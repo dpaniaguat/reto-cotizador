@@ -1,4 +1,4 @@
-import { FCotiza } from '../Organismos/FCotiza';
+import { FormCotiza } from '../Organismos/FormCotiza';
 
 export const Index = () =>{
 
@@ -33,7 +33,7 @@ export const Index = () =>{
                    <span>Déjanos tus datos</span>
                 </div> 
                 <div className="cotiza_right_form">
-                  <FCotiza/>
+                  <FormCotiza/>
                 </div>
                 
             </div>

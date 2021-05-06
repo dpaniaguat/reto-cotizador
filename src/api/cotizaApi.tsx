@@ -1,3 +1,8 @@
 import axios from 'axios';
 
-export const cotizaApi = axios.create();
+export const http = axios.create({
+    baseURL:'https://api.samishop.pe/v1',
+    headers: {
+        "Content-type": "application/json"
+      }
+});
