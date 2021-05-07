@@ -1,10 +1,6 @@
 import { useForm } from "react-hook-form";
 import {useState,useEffect} from 'react';
-import { Redirect } from "react-router";
-import { Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
-import {useLogin} from "../../hooks/useLogin";
-import { Irequest } from "../../interfaces/Irequest";
 import { FormData } from "../../types/FormData"; 
 import { Ilogin } from "../../interfaces/Ilogin";
 import loginService from "../../services/loginService";
@@ -15,12 +11,9 @@ export const FormCotiza=()=>{
 
     const history = useHistory();
 
-    
-        //console.log(data);
+    const [login, setlogin] = useState();
 
     const onSubmit =  handleSubmit((data,e) => {
-        
-        //e?.target.reset();
 
         const cliente : Ilogin =  {
             TipoDoc: data.TipoDoc,
@@ -29,30 +22,25 @@ export const FormCotiza=()=>{
             Placa: data.Placa
         };
 
-        const config:Irequest =  {
-            InitialMetodo: 'POST',
-            InitialId: 0,
-            IData:cliente
-        };
-        
-
-        console.log('cliente: ',cliente);
-
-        const rsp = proceso.fetchData(config);
-        console.log(proceso.response, proceso.isComplete,' rsp: ',rsp);    
-
-        /*
-        let tiempo = setInterval(()=>{
+        loginService.create(cliente)
+        .then(response => {
             
-            //clearInterval(tiempo);
-        },1000);
-*/
-        // <Redirect  to="/datos-auto" />
-        //history.push(`/datos-auto`);
+            //setlogin(cliente);
+            console.log(response.data);
+            
+            localStorage.setItem('token',JSON.stringify(response.data));
+            //sessionStorage.setItem('idCliente',);
+
+            history.push(`/datos-auto`);
+
+        })
+        .catch(e => {
+          console.log(e);
+        });
+        
+        //e?.target.reset();
         
     });
-
-    const proceso = useLogin();
 
     const [dni, setdni] = useState('');
 
@@ -70,7 +58,9 @@ export const FormCotiza=()=>{
                     <select className="cotiza__right_select" {
                         ...register("TipoDoc",{required:true})
                     }>
-                        <option>1</option>
+                        <option value='1'>DNI</option>
+                        <option value='2'>CE</option>
+                        <option value='3'>RUC</option>
                     </select>
                 </div>
 
