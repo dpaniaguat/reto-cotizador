@@ -1,175 +1,171 @@
-.cotiza__left_top{
-    position: absolute;
-    width: 856px;
-    height: 377px;
-    left: -320px;
-    top: 0px;
+.cotiza__left_top {
+  position: absolute;
+  width: 856px;
+  height: 377px;
+  left: -320px;
+  top: 0px;
 
-    /*background: #C4C4C4;*/
+  /*background: #C4C4C4;*/
 }
-.cotiza__left_botton{
-    position: absolute;
-    width: 892px;
-    height: 483px;
-    left: -356px;
-    top: 241px;
+.cotiza__left_botton {
+  position: absolute;
+  width: 892px;
+  height: 483px;
+  left: -356px;
+  top: 241px;
 
-    background: #ECF0FF;
-}
-
-.cotiza__left_top__center{
-    position: absolute;
-    width: 320px;
-    height: 250px;
-    left: 152px;
-    top: 96px;
-
-    /* Gray_1_Títulos */
-
-    background: #494F66;
+  background: #ecf0ff;
 }
 
-.cotiza__left_top__logo{
-    /* Logo RIMAC */
-    position: absolute;
-    width: 99px;
-    height: 16px;
-    left: calc(50% - 99px/2 - 510.5px);
-    top: calc(50% - 16px/2);
-    /* Red_1_Rimac */
-   
-        background-image: url("logo.png");
-        background-color: #cccccc;
-      
+.cotiza__left_top__center {
+  position: absolute;
+  width: 320px;
+  height: 250px;
+  left: 152px;
+  top: 96px;
+
+  /* Gray_1_Títulos */
+
+  background: #494f66;
 }
 
-.cotiza__right_button{
-    /* .atom_button */
+.cotiza__left_top__logo {
+  /* Logo RIMAC */
+  position: absolute;
+  width: 99px;
+  height: 16px;
+  left: calc(50% - 99px / 2 - 510.5px);
+  top: calc(50% - 16px / 2);
+  /* Red_1_Rimac */
 
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-/* Red_1_Rimac */
-
-background: #EF3340;
-border-radius: 8px;
+  background-image: url("logo.png");
+  background-color: #cccccc;
 }
 
-.cotiza__right_titulo{
-    /* Déjanos tus datos */
+.cotiza__right_button {
+  /* .atom_button */
 
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
 
-position: absolute;
-width: 288px;
-height: 36px;
-left: 760px;
-top: 112px;
+  /* Red_1_Rimac */
 
-/* Title_05/D_Regular_28px */
-
-font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 28px;
-line-height: 36px;
-/* identical to box height, or 129% */
-
-letter-spacing: -0.2px;
-
-/* Gray_1_Títulos */
-
-color: #494F66;
+  background: #ef3340;
+  border-radius: 8px;
 }
 
-.cotiza__left_botton_titulo{
-    
-position: absolute;
-width: 55px;
-height: 16px;
-left: 152px;
-top: 370px;
+.cotiza__right_titulo {
+  /* Déjanos tus datos */
 
-/* Button/Button_12px */
+  position: absolute;
+  width: 288px;
+  height: 36px;
+  left: 760px;
+  top: 112px;
 
-font-family: Lato;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 16px;
-/* identical to box height, or 133% */
+  /* Title_05/D_Regular_28px */
 
-letter-spacing: 0.8px;
-text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
 
-/* Gray_1_Títulos */
+  letter-spacing: -0.2px;
 
-color: #494F66;
+  /* Gray_1_Títulos */
+
+  color: #494f66;
 }
 
-.cotiza__left_botton_center{
-    position: absolute;
-width: 320px;
-height: 96px;
-left: 152px;
-top: 390px;
+.cotiza__left_botton_titulo {
+  position: absolute;
+  width: 55px;
+  height: 16px;
+  left: 152px;
+  top: 370px;
 
-/* Title_04/D_Regular_36px */
+  /* Button/Button_12px */
 
-font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 48px;
-/* or 133% */
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
 
-letter-spacing: -0.2px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 
-/* Gray_1_Títulos */
+  /* Gray_1_Títulos */
 
-color: #494F66;
+  color: #494f66;
 }
 
-.cotiza__left_botton_subtitle{
-    position: absolute;
-width: 288px;
-height: 48px;
-left: 152px;
-top: 502px;
+.cotiza__left_botton_center {
+  position: absolute;
+  width: 320px;
+  height: 96px;
+  left: 152px;
+  top: 390px;
 
-/* Paragraph/Reg_14px */
+  /* Title_04/D_Regular_36px */
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-/* or 171% */
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
 
-display: flex;
-align-items: center;
+  letter-spacing: -0.2px;
 
-/* Gray_2_Paragraph */
+  /* Gray_1_Títulos */
 
-color: #676F8F;
+  color: #494f66;
 }
 
-.cotiza__right_input{
-    position: absolute !important;
-    left: 0px !important;
-    right: 0px !important;
-    top: 0px !important;
-    bottom: 0px !important;
+.cotiza__left_botton_subtitle {
+  position: absolute;
+  width: 288px;
+  height: 48px;
+  left: 152px;
+  top: 502px;
 
-    /* White */
+  /* Paragraph/Reg_14px */
 
-    background: #FFFFFF !important;
-    /* Gray_4 */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
 
-    border: 1px solid #C5CBE0 !important;
-    box-sizing: border-box !important;
-    border-radius: 4px !important;
+  display: flex;
+  align-items: center;
+
+  /* Gray_2_Paragraph */
+
+  color: #676f8f;
+}
+
+.cotiza__right_input {
+  position: absolute !important;
+  left: 0px !important;
+  right: 0px !important;
+  top: 0px !important;
+  bottom: 0px !important;
+
+  /* White */
+
+  background: #ffffff !important;
+  /* Gray_4 */
+
+  border: 1px solid #c5cbe0 !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
 }
